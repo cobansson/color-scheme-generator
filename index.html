@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Color Scheme Generator</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="index.css">
+        <!-- Inter Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+        <!-- Meta tag -->
+        <meta charset="UTF-8">
+        <meta name="description" content="Color Scheme Generator">
+        <meta name="keywords" content="JavaScript, REST APIs">
+        <meta name="author" content="Engin Cobanoglu">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <nav>
+            <h1>Color Scheme Generator</h1>
+        </nav>
+
+        <form id="color-form" class="color-form">
+            <input type="color" id="color-input" class="color-input">
+            <select id="mode">
+                <option value="monochrome">Monochrome</option>
+                <option value="monochrome-dark">Monochrome-Dark</option>
+                <option value="monochrome-light">Monochrome-Light</option>
+                <option value="analogic">Analogic</option>
+                <option value="complement">Complement</option>
+                <option value="analogic-complement">Analogic-Complement</option>
+                <option value="triad">Triad</option>
+                <option value="quad">Quad</option>
+            </select>
+            <input type="number" id="number-input" class="number-input" placeholder="Number" min="1" max="6">
+            <button type="submit">Get color scheme</button>
+        </form>
+
+        <h2 id="info-text">You can click on the color block or the hex code to copy</h2>
+
+        <div id="colors-section" class="colors-section">
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
